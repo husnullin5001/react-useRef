@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function App() {
   const [name, setName] = useState('')
-  const [renderCount, setRenderCount] = useState(1)
+  const renderCount = useRef(1)
 
-  // useEffect(() => {
-  //   setRenderCount(prevRenderCount => prevRenderCount + 1)
-  // })
+  useEffect(() => {
+    renderCount.current = renderCount.current + 1
+  })
 
   return (
     <>
       <input value={name} onChange={e => setName(e.target.value)} />
       <div>My name is {name}</div>
-      <div>Rendered count: {renderCount}</div>
+      <div>Rendered count: {renderCount.current}</div>
     </>
   );
 }
