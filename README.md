@@ -1,3 +1,8 @@
+This project is a video lesson -> https://youtu.be/t2ypzz6gJm0
+Learn useRef
+from youtube channel Web Dev Simplified -> https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
